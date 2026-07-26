@@ -1,10 +1,10 @@
-# Tanishka Sen — Marketing Portfolio
+# Client Portfolio — Tanishka Sen (Marketing Executive)
 
-A colorful, animated, single-page portfolio built for a client, **Tanishka Sen** — a Marketing Executive based in Dubai, UAE. Built with plain **HTML, CSS, and vanilla JavaScript** — no framework, no build step.
+A colorful, animated, single-page **client portfolio**, designed and developed end-to-end for **Tanishka Sen** — a Marketing Executive based in Dubai, UAE. Built with plain **HTML, CSS, and vanilla JavaScript** — no framework, no build step.
 
-**Live site:** https://jateenyadav.github.io/tanishka-portfolio/
+**Live site:** https://jateenyadav.github.io/client-portfolio/
 
-> A client project: full-funnel marketing portfolio designed and developed end-to-end.
+> Client work: a full-funnel marketing portfolio built from scratch.
 
 ## Highlights
 
