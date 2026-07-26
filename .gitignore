@@ -1,0 +1,7 @@
+# Source material / large binaries (not needed for the deployed site)
+*.pdf
+assets/new/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
