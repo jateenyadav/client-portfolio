@@ -69,6 +69,10 @@ document.querySelectorAll(".bar").forEach((el) => barObserver.observe(el));
 
 // ===== Count-up stats =====
 const fmt = (n) => n.toLocaleString("en-US");
+function setFinal(el) {
+  const target = parseInt(el.dataset.count, 10);
+  el.textContent = (el.dataset.prefix || "") + fmt(target) + (el.dataset.suffix || "");
+}
 function animateCount(el) {
   const target = parseInt(el.dataset.count, 10);
   const prefix = el.dataset.prefix || "";
@@ -83,13 +87,18 @@ function animateCount(el) {
   }
   requestAnimationFrame(tick);
 }
-const countObserver = new IntersectionObserver(
-  (entries) => entries.forEach((e) => {
-    if (e.isIntersecting) { animateCount(e.target); countObserver.unobserve(e.target); }
-  }),
-  { threshold: 0.6 }
-);
-document.querySelectorAll("[data-count]").forEach((el) => countObserver.observe(el));
+const counters = document.querySelectorAll("[data-count]");
+if (!("IntersectionObserver" in window) || reduceMotion) {
+  counters.forEach(setFinal);
+} else {
+  const countObserver = new IntersectionObserver(
+    (entries) => entries.forEach((e) => {
+      if (e.isIntersecting) { animateCount(e.target); countObserver.unobserve(e.target); }
+    }),
+    { threshold: 0.4, rootMargin: "0px 0px -10% 0px" }
+  );
+  counters.forEach((el) => countObserver.observe(el));
+}
 
 // ===== 3D portrait tilt + scroll parallax =====
 const portrait = document.getElementById("portrait3d");
