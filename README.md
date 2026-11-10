@@ -4,6 +4,10 @@ A colorful, animated, single-page **client portfolio**, designed and developed e
 
 **Live site:** https://jateenyadav.github.io/client-portfolio/
 
+[![Client portfolio demo: hero, services roadmap, stacking projects, gallery lightbox, theme switch](docs/demo.gif)](docs/demo.mp4)
+
+▶ [Watch the full 20-second demo with sound](docs/demo.mp4)
+
 > Client work: a full-funnel marketing portfolio built from scratch.
 
 ## Highlights
