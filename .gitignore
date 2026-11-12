@@ -5,3 +5,6 @@ assets/new/
 # OS / editor cruft
 .DS_Store
 Thumbs.db
+
+# Generated launch-video output (kept local)
+brag-output/
